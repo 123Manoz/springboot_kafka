@@ -15,19 +15,19 @@ Requirements:
 Instructions to install [sdkman](https://sdkman.io/install)
 
 ```
-$ curl -s "https://get.sdkman.io" | bash
-$ source "$HOME/.sdkman/bin/sdkman-init.sh"
-$ sdk version
-$ skd list java 
-$ skd install java 17.X.version
-$ sdk install gradle 8.0.2** 
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk version
+skd list java 
+skd install java 17.X.version
+sdk install gradle 8.0.2** 
 ```
 
 command for build and run
 
 ```
-$ ./gradlew clean build 
-$ ./gradlew bootRun 
+./gradlew clean build 
+./gradlew bootRun 
 ```
 
 This application will load bunch of application beans shows name of classes loaded by default application 
