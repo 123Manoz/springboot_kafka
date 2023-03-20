@@ -24,6 +24,12 @@ repositories {
 
 dependencies {
     // This dependency is used by the application.
+// tag::actuator[]
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    // end::actuator[]
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    // tag::tests[]
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
     implementation 'com.google.guava:guava:31.1-jre'
 }
 
@@ -39,5 +45,5 @@ testing {
 
 application {
     // Define the main class for the application.
-    mainClass = 'kafka_ws.App'
+    mainClass = 'kafka_ws.Application'
 }
